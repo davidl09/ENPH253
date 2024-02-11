@@ -86,7 +86,7 @@ em_ratio = e_m_vals.mean()
 print(f"Average e/m value: {em_ratio:e}")
 print(f"Standard deviation: {np.std(e_m_vals):e}")
 print(f"Experiment error: {round(((em_ratio / true_e_m) - 1) * 100, 2)}%")
-print(f"Allowable Error: {np.std(e_m_vals) / em_ratio * 100}%")
+print(f"Allowable Error: {round(np.std(e_m_vals) / em_ratio * 100, 2)}%")
 
 #%%
 #Earth's magnetic field
